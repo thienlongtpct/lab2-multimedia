@@ -1,0 +1,16 @@
+#hero {
+    height: 800px;
+    background: url("images/hero.png") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#hero p {
+    width: 1300px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}

@@ -1,0 +1,122 @@
+#news {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.news-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+}
+
+.news-container > img {
+    position: absolute;
+    height: 400px;
+    min-width: 100%;
+}
+
+.news-container.news-item-4 {
+    grid-column-start: span 4;
+}
+
+.news-container.news-item-4 > img {
+    height: fit-content;
+}
+
+.news-container.news-item-4 {
+    height: 600px;
+}
+
+.news-container.news-item-3 {
+    grid-column-start: span 3;
+}
+
+.news-container.news-item-3 > img {
+    height: auto;
+}
+
+.news-container.news-item-2 {
+    grid-column-start: span 2;
+}
+
+.news-container.news-item-1 {
+    grid-column-start: span 1;
+}
+
+.news-container > .preview {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+    .news-container.news-item-1 {
+        grid-column-start: span 2;
+    }
+
+    .news-container.news-item-2 {
+        grid-column-start: span 4;
+    }
+
+    .news-container.news-item-2 > img {
+        height: fit-content;
+    }
+
+    .news-container.news-item-2 {
+        height: 500px;
+    }
+
+    .news-container.news-item-3 {
+        grid-column-start: span 4;
+    }
+
+    .news-container.news-item-3 > img {
+        height: fit-content;
+    }
+
+    .news-container.news-item-3 {
+        height: 500px;
+    }
+
+    .news-container.news-item-4 {
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .news-container > .preview {
+        font-size: 30px;
+    }
+
+    .news-container.news-item-1 {
+        grid-column-start: span 4;
+    }
+
+    .news-container.news-item-1 > img {
+        height: fit-content;
+    }
+
+    .news-container.news-item-2 {
+        height: 400px;
+    }
+
+    .news-container.news-item-3 {
+        height: 400px;
+    }
+
+    .news-container.news-item-4 {
+        height: 400px;
+    }
+}
