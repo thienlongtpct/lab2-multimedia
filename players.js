@@ -10,7 +10,6 @@ let startApp = () => {
 			modal.style.display = 'block';
 			modalImage.src = event.target.src;
 			modalImage.alt = event.target.alt;
-			modalTitle.innerText = container.querySelector(".preview").innerText;
 		};
 	});
 
