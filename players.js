@@ -31,7 +31,7 @@ for (let i = 1; i <= 23; ++i) {
 	imageContainer.classList.add('image-container');
 	let image = document.createElement('img');
 	image.alt = "Карточка игрока";
-	image.src = `/images/players/${i}.png`;
+	image.src = `./images/players/${i}.png`;
 	imageContainer.appendChild(image);
 	gallery.appendChild(imageContainer)
 }
