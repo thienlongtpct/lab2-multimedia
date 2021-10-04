@@ -8,6 +8,10 @@
     max-width: 90%;
 }
 
-.image-container > img:hover {
-    opacity: 0.8;
+.icons.checked {
+    opacity: 1;
+}
+
+.icons {
+    opacity: 0.2;
 }

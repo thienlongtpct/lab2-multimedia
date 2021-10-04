@@ -5,7 +5,7 @@ body, header, main, footer, div, p {
 
 body {
     background: #e7e7e7;
-    background: url("images/background.png") no-repeat fixed center center;
+    background: url("../images/background.png") no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -73,6 +73,35 @@ main {
     font-weight: bold;
     background-color: #001489;
     color: #ffffff;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-tags {
+    display: flex;
+    align-items: center;
+}
+
+.inline-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #00148955;
+    color: #ffffff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.inline-tag:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.inline-tag.checked {
+    background-color: #001489;
 }
 
 #modal {

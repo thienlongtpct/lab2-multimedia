@@ -1,6 +1,6 @@
 #hero {
     height: 800px;
-    background: url("images/hero.png") no-repeat center center;
+    background: url("../images/hero.png") no-repeat center center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
