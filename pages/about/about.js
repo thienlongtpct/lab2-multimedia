@@ -1,3 +1,5 @@
+Array.from(document.getElementsByTagName('audio'))[0].play();
+
 const containers = Array.from(document.getElementsByClassName('news-container'));
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');

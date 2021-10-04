@@ -1,3 +1,5 @@
+Array.from(document.getElementsByTagName('audio'))[0].play();
+
 let gallery = document.getElementById("gallery");
 let players = [
 	{
